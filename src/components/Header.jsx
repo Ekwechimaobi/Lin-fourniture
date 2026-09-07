@@ -29,10 +29,10 @@ const Header = () => {
             Shop{" "}
           </Link>
           <Link
-            to="/About"
+            to="/Sofa"
             className="no-underline text-black text-[15px] font-medium hover:text-[#B88E2F]"
           >
-            About
+            Sofa
           </Link>
           <Link
             to="/Contact"

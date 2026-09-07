@@ -67,58 +67,278 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="inspiration w-full bg-[#FCF8F3] p-17.5 flex gap-10 items-center" />
+      <section className="related-products w-300 text-center my-15 mx-auto">
+        <h2 className="text-[28px] font-bold mb-10 text-[#222]">
+          Our Products
+        </h2>
 
-      <div className="left w-[30%]">
-        <h2 className="text-[40px] mb-5">50+ Beautiful rooms inspiration</h2>
+        <div className="products flex justify-between gap-6.25">
+          <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div className="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 1 (1).png"
+                alt="Syltherine"
+                className="w-full h-75 object-cover block "
+              />
+              <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                -30%
+              </span>
+            </div>
 
-        <p className="text-[#666] mb-7.5 leading-7">
-          Our designer already made a lot of beautiful prototype of rooms that
-          inspire you.
-        </p>
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Syltherine</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Stylish cafe chair
+              </p>
 
-        <button className="py-3.75 px-10 bg-[#B88E2F] text-white border-none ">
-          Explore More
-        </button>
-      </div>
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 2.500.000
+                </span>
+                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                  Rp 3.500.000
+                </span>
+              </div>
+            </div>
+          </div>
 
-      <div className="middle w-[35%] relative">
-        <img className="w-full" src="images/room1.jpg" />
+          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div class="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 2 (1).png"
+                alt="Leviosa"
+                className="w-full h-75 object-cover block "
+              />
+            </div>
 
-        <div className="room-text absolute left-6.5 bottom-6.5 bg-[rgba(255,255,255,.8)] p-5">
-          <small>01 — Bed Room</small>
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Stylish cafe chair
+              </p>
 
-          <h3>Inner Peace</h3>
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 2.500.000
+                </span>
+              </div>
+            </div>
+          </div>
 
-          <img className="w-[35%] mt-4" src="images/arrow.png" />
+          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div class="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 3 (1).png"
+                alt="Lolito"
+                className="w-full h-75 object-cover block "
+              />
+              <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                -50%
+              </span>
+            </div>
+
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Luxury big sofa
+              </p>
+
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 7.000.000
+                </span>
+                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                  Rp 14.000.000
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div class="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 4 (1).png"
+                alt="Respira"
+                className="w-full h-75 object-cover block "
+              />
+              <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
+                New
+              </span>
+            </div>
+
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Outdoor bar table and stool
+              </p>
+
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 500.000
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="products flex justify-between gap-6.25 mt-9">
+          <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div className="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 1 (1).png"
+                alt="Syltherine"
+                className="w-full h-75 object-cover block "
+              />
+              <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                -30%
+              </span>
+            </div>
 
-      <div className="right w-[35%]" />
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Syltherine</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Stylish cafe chair
+              </p>
 
-      {/* <img className="w-full" src="images/room2.jpg" />
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 2.500.000
+                </span>
+                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                  Rp 3.500.000
+                </span>
+              </div>
+            </div>
+          </div>
 
-      <img
-        src="images/next.png"
-        className="next absolute -right-5 top-11.5 w-11.5"
-      />
+          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div class="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 2 (1).png"
+                alt="Leviosa"
+                className="w-full h-75 object-cover block "
+              />
+            </div>
 
-      <div className="dots mt-5 flex gap-3" />
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Stylish cafe chair
+              </p>
 
-      <img className="w-3" src="images/dot-active.png" />
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 2.500.000
+                </span>
+              </div>
+            </div>
+          </div>
 
-      <img className="w-3" src="images/dot.png" />
+          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div class="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 3 (1).png"
+                alt="Lolito"
+                className="w-full h-75 object-cover block "
+              />
+              <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                -50%
+              </span>
+            </div>
 
-      <img className="w-3" src="images/dot.png" />
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Luxury big sofa
+              </p>
 
-      <img className="w-3" src="images/dot.png" />
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 7.000.000
+                </span>
+                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                  Rp 14.000.000
+                </span>
+              </div>
+            </div>
+          </div>
 
-      <div />
+          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+            <div class="product-image relative overflow-hidden">
+              <img
+                src="/public/pictures/image 4 (1).png"
+                alt="Respira"
+                className="w-full h-75 object-cover block "
+              />
+              <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
+                New
+              </span>
+            </div>
 
-      <div /> */}
+            <div className="product-info p-4.5">
+              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
+              <p className="category text-[#898989] text-[14px] mb-3">
+                Outdoor bar table and stool
+              </p>
 
-      <section />
+              <div className="price flex items-center gap-3 ">
+                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                  Rp 500.000
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-area mt-10">
+          <button className="w-61.25 h-12 bg-white text-[#B88E2F] font-semibold cursor-pointer border border-[#B88E2F] transition duration-300 hover:bg-[#B88E2F] hover:text-white ">
+            Show More
+          </button>
+        </div>
+      </section>
 
+      <section className="inspiration w-full h-125 bg-[#fcf8f3] flex items-center pl-22.5 relative overflow-hidden">
+        <div className="inspiration-text w-[320px] shrink-0 pl-6.25">
+          <h2 className="text-[28px] leading-[1.1] text-[#333333] font-bold mb-3">
+            50+ Beautiful rooms
+            <br />
+            inspiration
+          </h2>
+
+          <p className="w-62.5 text-[10px] leading-normal text-[#666666] mb-5">
+            Our designer already made a lot of beautiful prototype of rooms that
+            inspire you.
+          </p>
+
+          <button className="w-31.25 h-9.5 border-none bg-[#b88e2f] text-white text-[11px] font-semibold cursor-pointer hover:bg-[#9d7825]">
+            Explore More
+          </button>
+        </div>
+        <div className="room-card w-82.5 h-105 relative shrink-0 overflow-hidden ">
+          <img
+            className="w-full h-full block object-cover"
+            src="/public/pictures/inspiration1.png"
+            alt="Beautiful bedroom"
+          />
+
+          <div class="room-info absolute left-0 bottom-0 w-52.5 h-26.25 bg-white py-6.25 px-5 ">
+            <span className="text-[#777777] text-[11px]">
+              01 &nbsp; — &nbsp; Bed Room
+            </span>
+            <h3 className="mt-1.75 text-[18px] text-[#333333]">Inner Peace</h3>
+          </div>
+
+          <button className="arrow-button absolute left-52.5 bottom-0 w-11.25 h-11.25 border-none bg-[#b88e2f] text-white text-[20px] cursor-pointer hover:bg-[#9d7825]">
+            →
+          </button>
+        </div>
+
+        <div className="room-card second-room w-82.5 ml-3  h-105 relative shrink-0 overflow-hidden">
+          <img
+            className="w-full h-full block object-cover"
+            src="/public/pictures/inspriation 2.png"
+            alt="Beautiful dining room"
+          />
+        </div>
+      </section>
       <Footer />
     </div>
   );
