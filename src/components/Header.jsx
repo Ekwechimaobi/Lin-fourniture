@@ -9,7 +9,7 @@ const Header = () => {
       <header className="flex w-100% h-30 justify-between items-center p-16 bg-white">
         <div className="flex items-center gap-1">
          <Link to="/"> <img
-            src="/public/pictures/Meubel House_Logos-05.png"
+            src="/pictures/Meubel House_Logos-05.png"
             alt="logo"
             className="w-16"
           /> </Link>

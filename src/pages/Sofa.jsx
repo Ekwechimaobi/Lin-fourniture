@@ -194,7 +194,7 @@ function Sofa() {
         <div class="bottom-images w-300 my-12.5 mx-auto flex gap-7.5 justify-center">
           <div className="img-box w-140 h-87.5 bg-[#F9F1E7] rounded-[10px] flex justify-center items-center">
             <img
-              src="/pictures/Cloud sofa three seater + ottoman_2 1 (1).png"
+              src="/pictures/Cloud1.png"
               alt=""
               className="w-[90%]"
             />
@@ -202,7 +202,7 @@ function Sofa() {
 
           <div className="img-box w-140 h-87.5 bg-[#F9F1E7] rounded-[10px] flex justify-center items-center">
             <img
-              src="/pictures/Cloud sofa three seater + ottoman_1 1 (1).png"
+              src="/pictures/Cloud2.png"
               alt=""
               className="w-[90%]"
             />
