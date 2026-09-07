@@ -8,14 +8,14 @@ function Blog() {
         <Header/>
       <section className="banner w-full h-70 relative overflow-hidden">
         <img
-          src="/public/pictures/Rectangle 1.png"
+          src="/pictures/Rectangle 1.png"
           alt="Banner"
           className="banner-img w-full h-full object-cover"
         />
 
         <div className="banner-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <img
-            src="/public/pictures/Meubel House_Logos-05.png"
+            src="/pictures/Meubel House_Logos-05.png"
             alt="Logo"
             className="logo w-10 mb-2.5 ml-15"
           />
@@ -33,7 +33,7 @@ function Blog() {
         <div class="blog flex-3">
           <div class="post mb-17.5">
             <img
-              src="/public/pictures/blog 1.png"
+              src="/pictures/blog 1.png"
               alt="Blog Image"
               className="w-full h-107.5 object-cover"
             />
@@ -64,7 +64,7 @@ function Blog() {
 
           <div class="post mb-17.5">
             <img
-              src="/public/pictures/blog 2.png"
+              src="/pictures/blog 2.png"
               alt="Blog Image"
               className="w-full h-107.5 object-cover"
             />
@@ -94,7 +94,7 @@ function Blog() {
 
           <div class="post mb-17.5">
             <img
-              src="/public/pictures/blog 3.png"
+              src="/pictures/blog 3.png"
               alt="Blog Image"
               className="w-full h-107.5 object-cover"
             />
@@ -172,7 +172,7 @@ function Blog() {
             <div className="recent flex gap-3.75 mb-6.25 align-center ">
               <img
                 className="w-20 h-20 object-cover"
-                src="/public/pictures/recent 1.png"
+                src="/pictures/recent 1.png"
                 alt=""
               />
               <div>
@@ -186,7 +186,7 @@ function Blog() {
             <div className="recent flex gap-3.75 mb-6.25 items-center ">
               <img
                 className="w-20 h-20 object-cover"
-                src="/public/pictures/recent 2.png"
+                src="/pictures/recent 2.png"
                 alt=""
               />
               <div>
@@ -200,7 +200,7 @@ function Blog() {
             <div className="recent flex gap-3.75 mb-6.25 items-center ">
               <img
                 className="w-20 h-20 object-cover"
-                src="/public/pictures/recent 3.png"
+                src="/pictures/recent 3.png"
                 alt=""
               />
               <div>
@@ -214,7 +214,7 @@ function Blog() {
             <div className="recent flex gap-3.75 mb-6.25 items-center ">
               <img
                 className="w-20 h-20 object-cover"
-                src="/public/pictures/recent 4.png"
+                src="/pictures/recent 4.png"
                 alt=""
               />
               <div>
@@ -226,7 +226,7 @@ function Blog() {
             <div className="recent flex gap-3.75 mb-6.25 items-center ">
               <img
                 className="w-20 h-20 object-cover"
-                src="/public/pictures/recent 5.png"
+                src="/pictures/recent 5.png"
                 alt=""
               />
               <div>

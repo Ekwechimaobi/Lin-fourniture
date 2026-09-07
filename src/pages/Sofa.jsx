@@ -5,6 +5,7 @@ import { MdFacebook } from "react-icons/md";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { TiStarHalf } from "react-icons/ti";
 import Footer from "../components/Footer";
+import { Link } from "react-router";
 
 function Sofa() {
   return (
@@ -26,22 +27,22 @@ function Sofa() {
             <div class="thumbs flex flex-col gap-5 ">
               <img
                 className="w-18.75 h-18.75 object-cover bg-[#f9f9f9] rounded-[10px] cursor-pointer p-2"
-                src="/public/pictures/Outdoor sofa  1 (1).png"
+                src="/pictures/Outdoor sofa  1 (1).png"
                 alt=""
               />
               <img
                 className="w-18.75 h-18.75 object-cover bg-[#f9f9f9] rounded-[10px] cursor-pointer p-2"
-                src="/public/pictures/stuart sofa 1 (3).png"
+                src="/pictures/stuart sofa 1 (3).png"
                 alt=""
               />
               <img
                 className="w-18.75 h-18.75 object-cover bg-[#f9f9f9] rounded-[10px] cursor-pointer p-2"
-                src="/public/pictures/stuart sofa 1 (2).png"
+                src="/pictures/Stuart sofa 1 (2).png"
                 alt=""
               />
               <img
                 className="w-18.75 h-18.75 object-cover bg-[#f9f9f9] rounded-[10px] cursor-pointer p-2"
-                src="/public/pictures/stuart sofa 1 (1).png"
+                src="/pictures/Stuart sofa 1 (1).png"
                 alt=""
               />
             </div>
@@ -49,7 +50,7 @@ function Sofa() {
             <div class="main-image w-125 h-125 bg-[#F9F1E7] rounded-[10px] flex justify-center items-center">
               <img
                 className="w-[90%] h-auto"
-                src="/public/pictures/Outdoor sofa  1 (2).png"
+                src="/pictures/Outdoor sofa  1 (2).png"
                 alt=""
               />
             </div>
@@ -118,10 +119,11 @@ function Sofa() {
                   +
                 </button>
               </div>
-
-              <button className="cart h-13.75 bg-white rounded-[10px] cursor-pointer text-[16px] border border-black py-0 px-8.75 hover:bg-[#b88e2f] hover:text-white hover:border-[#b88e2f]">
-                Add To Cart
-              </button>
+              <Link to="/cart">
+                <button className="cart h-13.75 bg-white rounded-[10px] cursor-pointer text-[16px] border border-black py-0 px-8.75 hover:bg-[#b88e2f] hover:text-white hover:border-[#b88e2f]">
+                  Add To Cart
+                </button>
+              </Link>
 
               <button className="compare h-13.75 bg-white rounded-[10px] cursor-pointer text-[16px] border border-black py-0 px-8.75 hover:bg-[#b88e2f] hover:text-white hover:border-[#b88e2f]">
                 + Compare
@@ -151,8 +153,8 @@ function Sofa() {
               <tr className="">
                 <td className="py-2 px-0 align-middle  ">Share</td>
                 <td className="align-middle flex items-center">
-                  
-                  <div className="flex gap-2.5 items-center pt-2 ">:
+                  <div className="flex gap-2.5 items-center pt-2 ">
+                    :
                     <MdFacebook className="mt-1 text-[#1877f2]" />
                     <IoLogoLinkedin className="mt-1 text-[#0a66c2]" />
                     <BsTwitterX className="mt-1 text-black" />
@@ -191,11 +193,19 @@ function Sofa() {
 
         <div class="bottom-images w-300 my-12.5 mx-auto flex gap-7.5 justify-center">
           <div className="img-box w-140 h-87.5 bg-[#F9F1E7] rounded-[10px] flex justify-center items-center">
-            <img src="/public/pictures/Cloud sofa three seater + ottoman_2 1 (1).png" alt="" className="w-[90%]" />
+            <img
+              src="/pictures/Cloud sofa three seater + ottoman_2 1 (1).png"
+              alt=""
+              className="w-[90%]"
+            />
           </div>
 
           <div className="img-box w-140 h-87.5 bg-[#F9F1E7] rounded-[10px] flex justify-center items-center">
-            <img src="/public/pictures/Cloud sofa three seater + ottoman_1 1 (1).png" alt="" className="w-[90%]" />
+            <img
+              src="/pictures/Cloud sofa three seater + ottoman_1 1 (1).png"
+              alt=""
+              className="w-[90%]"
+            />
           </div>
         </div>
       </section>
@@ -209,7 +219,7 @@ function Sofa() {
           <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div className="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 1 (1).png"
+                src="/pictures/image 1 (1).png"
                 alt="Syltherine"
                 className="w-full h-75 object-cover block "
               />
@@ -238,7 +248,7 @@ function Sofa() {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 2 (1).png"
+                src="/pictures/image 2 (1).png"
                 alt="Leviosa"
                 className="w-full h-75 object-cover block "
               />
@@ -261,7 +271,7 @@ function Sofa() {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 3 (1).png"
+                src="/pictures/image 3 (1).png"
                 alt="Lolito"
                 className="w-full h-75 object-cover block "
               />
@@ -290,7 +300,7 @@ function Sofa() {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 4 (1).png"
+                src="/pictures/image 4 (1).png"
                 alt="Respira"
                 className="w-full h-75 object-cover block "
               />

@@ -2,6 +2,10 @@ import Features from "../components/Features";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { IoIosArrowForward } from "react-icons/io";
+import { BsViewList } from "react-icons/bs";
+import { HiViewGrid } from "react-icons/hi";
+import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
+import { Link } from "react-router";
 
 const Shop = () => {
   return (
@@ -9,14 +13,14 @@ const Shop = () => {
       <Header />
       <section className="banner w-full h-70 relative overflow-hidden">
         <img
-          src="/public/pictures/Rectangle 1.png"
+          src="/pictures/Rectangle 1.png"
           alt="Banner"
           className="banner-img w-full h-full object-cover"
         />
 
         <div className="banner-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <img
-            src="/public/pictures/Meubel House_Logos-05.png"
+            src="/pictures/Meubel House_Logos-05.png"
             alt="Logo"
             className="logo w-10 mb-2.5 ml-15"
           />
@@ -33,22 +37,16 @@ const Shop = () => {
       <section className="filter-bar bg-[#F9F1E7] flex justify-between items-center py-7 px-17.5 flex-wrap">
         <div className="filter-left flex items-center gap-6.25 ">
           <div class="filter-item flex items-center gap-2.5">
-            <img className="w-5" src="images/filter-icon.png" alt="Filter" />
+            <HiOutlineAdjustmentsHorizontal />
             <span className="text-[18px]">Filter</span>
           </div>
+          <div>
+            <HiViewGrid />
+          </div>
 
-          <img
-            src="images/grid-icon.png"
-            alt="Grid"
-            className="icon w-5 cursor-pointer"
-          />
-
-          <img
-            src="images/list-icon.png"
-            alt="List"
-            className="icon w-5 cursor-pointer"
-          />
-
+          <div>
+            <BsViewList />
+          </div>
           <div className="divider w-0.5 h-8.75 bg-[#CFCFCF]"></div>
 
           <p className="text-[16px] text-[#333]">Showing 1–16 of 32 results</p>
@@ -81,436 +79,464 @@ const Shop = () => {
         </h2>
 
         <div className="products flex justify-between gap-6.25">
-          <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div className="product-image relative overflow-hidden">
-              <img
-                src="/pictures/image 1 (1).png"
-                alt="Syltherine"
-                className="w-full h-75 object-cover block "
-              />
-              <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -30%
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Syltherine</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 3.500.000
+          <Link to={`/shop/${1}`}>
+            <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div className="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 1 (1).png"
+                  alt="Syltherine"
+                  className="w-full h-75 object-cover block "
+                />
+                <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -30%
                 </span>
               </div>
-            </div>
-          </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 2 (1).png"
-                alt="Leviosa"
-                className="w-full h-75 object-cover block "
-              />
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">
+                  Syltherine
+                </h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 3.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 2 (1).png"
+                  alt="Leviosa"
+                  className="w-full h-75 object-cover block "
+                />
+              </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 3 (1).png"
-                alt="Lolito"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -50%
-              </span>
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Luxury big sofa
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 7.000.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 14.000.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 4 (1).png"
-                alt="Respira"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
-                New
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Outdoor bar table and stool
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 500.000
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 3 (1).png"
+                  alt="Lolito"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -50%
                 </span>
               </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Luxury big sofa
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 7.000.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 14.000.000
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 4 (1).png"
+                  alt="Respira"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
+                  New
+                </span>
+              </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Outdoor bar table and stool
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 500.000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
         <div className="products flex justify-between gap-6.25 mt-9">
-          <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div className="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 1 (1).png"
-                alt="Syltherine"
-                className="w-full h-75 object-cover block "
-              />
-              <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -30%
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Syltherine</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 3.500.000
+          <Link to={`/shop/${1}`}>
+            <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div className="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 1 (1).png"
+                  alt="Syltherine"
+                  className="w-full h-75 object-cover block "
+                />
+                <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -30%
                 </span>
               </div>
-            </div>
-          </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 2 (1).png"
-                alt="Leviosa"
-                className="w-full h-75 object-cover block "
-              />
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">
+                  Syltherine
+                </h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 3.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 2 (1).png"
+                  alt="Leviosa"
+                  className="w-full h-75 object-cover block "
+                />
+              </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 3 (1).png"
-                alt="Lolito"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -50%
-              </span>
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Luxury big sofa
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 7.000.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 14.000.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 4 (1).png"
-                alt="Respira"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
-                New
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Outdoor bar table and stool
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 500.000
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 3 (1).png"
+                  alt="Lolito"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -50%
                 </span>
               </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Luxury big sofa
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 7.000.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 14.000.000
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 4 (1).png"
+                  alt="Respira"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
+                  New
+                </span>
+              </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Outdoor bar table and stool
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 500.000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
         <div className="products flex justify-between gap-6.25 mt-9">
-          <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div className="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 1 (1).png"
-                alt="Syltherine"
-                className="w-full h-75 object-cover block "
-              />
-              <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -30%
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Syltherine</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 3.500.000
+          <Link to={`/shop/${1}`}>
+            <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div className="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 1 (1).png"
+                  alt="Syltherine"
+                  className="w-full h-75 object-cover block "
+                />
+                <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -30%
                 </span>
               </div>
-            </div>
-          </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 2 (1).png"
-                alt="Leviosa"
-                className="w-full h-75 object-cover block "
-              />
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">
+                  Syltherine
+                </h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 3.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 2 (1).png"
+                  alt="Leviosa"
+                  className="w-full h-75 object-cover block "
+                />
+              </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 3 (1).png"
-                alt="Lolito"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -50%
-              </span>
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Luxury big sofa
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 7.000.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 14.000.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 4 (1).png"
-                alt="Respira"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
-                New
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Outdoor bar table and stool
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 500.000
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 3 (1).png"
+                  alt="Lolito"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -50%
                 </span>
               </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Luxury big sofa
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 7.000.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 14.000.000
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 4 (1).png"
+                  alt="Respira"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
+                  New
+                </span>
+              </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Outdoor bar table and stool
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 500.000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
         <div className="products flex justify-between gap-6.25 mt-9">
-          <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div className="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 1 (1).png"
-                alt="Syltherine"
-                className="w-full h-75 object-cover block "
-              />
-              <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -30%
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Syltherine</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 3.500.000
+          <Link to={`/shop/${1}`}>
+            <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div className="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 1 (1).png"
+                  alt="Syltherine"
+                  className="w-full h-75 object-cover block "
+                />
+                <span className="badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -30%
                 </span>
               </div>
-            </div>
-          </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 2 (1).png"
-                alt="Leviosa"
-                className="w-full h-75 object-cover block "
-              />
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">
+                  Syltherine
+                </h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Stylish cafe chair
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 2.500.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 3.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 2 (1).png"
+                  alt="Leviosa"
+                  className="w-full h-75 object-cover block "
+                />
+              </div>
 
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 3 (1).png"
-                alt="Lolito"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
-                -50%
-              </span>
-            </div>
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Leviosa</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Stylish cafe chair
+                </p>
 
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Luxury big sofa
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 7.000.000
-                </span>
-                <span className="old-price text-[#b0b0b0] line-through text-[14px]">
-                  Rp 14.000.000
-                </span>
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 2.500.000
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
-            <div class="product-image relative overflow-hidden">
-              <img
-                src="/public/pictures/image 4 (1).png"
-                alt="Respira"
-                className="w-full h-75 object-cover block "
-              />
-              <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
-                New
-              </span>
-            </div>
-
-            <div className="product-info p-4.5">
-              <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
-              <p className="category text-[#898989] text-[14px] mb-3">
-                Outdoor bar table and stool
-              </p>
-
-              <div className="price flex items-center gap-3 ">
-                <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
-                  Rp 500.000
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 3 (1).png"
+                  alt="Lolito"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge sale badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#e97171]">
+                  -50%
                 </span>
               </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Lolito</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Luxury big sofa
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 7.000.000
+                  </span>
+                  <span className="old-price text-[#b0b0b0] line-through text-[14px]">
+                    Rp 14.000.000
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link to={`/shop/${1}`}>
+            <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
+              <div class="product-image relative overflow-hidden">
+                <img
+                  src="/pictures/image 4 (1).png"
+                  alt="Respira"
+                  className="w-full h-75 object-cover block "
+                />
+                <span class="badge new badge sale absolute top-3.75 right-3.75 w-11.25 h-11.25 rounded-[50%] text-white text-[13px] flex justify-center items-center font-bold bg-[#2ec1ac]">
+                  New
+                </span>
+              </div>
+
+              <div className="product-info p-4.5">
+                <h3 className="text-[24px] text-[#3a3a3a] mb-1.5">Respira</h3>
+                <p className="category text-[#898989] text-[14px] mb-3">
+                  Outdoor bar table and stool
+                </p>
+
+                <div className="price flex items-center gap-3 ">
+                  <span className="new-price text-[20px] font-bold text-[#3a3a3a]">
+                    Rp 500.000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
         <div className="pagination flex justify-center gap-3.75 my-12.5 mx-0">
           <a

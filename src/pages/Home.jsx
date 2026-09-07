@@ -42,7 +42,7 @@ const Home = () => {
           <div className="card">
             <img
               className="w-full h-112.5 object-cover rounded-[10px] "
-              src="/public/pictures/image 100.png"
+              src="/pictures/image 100.png"
               alt="Dining"
             />
             <h3 className="mt-4.5 text-[24px] ">Dining</h3>
@@ -51,7 +51,7 @@ const Home = () => {
           <div className="card">
             <img
               className="w-full h-112.5 object-cover rounded-[10px] "
-              src="/public/pictures/image 101.png"
+              src="/pictures/image 101.png"
               alt="Living"
             />
             <h3 className="mt-4.5 text-[24px] ">Living</h3>
@@ -60,7 +60,7 @@ const Home = () => {
           <div className="card">
             <img
               className="w-full h-112.5 object-cover rounded-[10px] "
-              src="/public/pictures/image 102.png"
+              src="/pictures/image 102.png"
             />
             <h3 className="mt-4.5 text-[24px] ">Bedroom</h3>
           </div>
@@ -76,7 +76,7 @@ const Home = () => {
           <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div className="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 1 (1).png"
+                src="/pictures/image 1 (1).png"
                 alt="Syltherine"
                 className="w-full h-75 object-cover block "
               />
@@ -105,7 +105,7 @@ const Home = () => {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 2 (1).png"
+                src="/pictures/image 2 (1).png"
                 alt="Leviosa"
                 className="w-full h-75 object-cover block "
               />
@@ -128,7 +128,7 @@ const Home = () => {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 3 (1).png"
+                src="/pictures/image 3 (1).png"
                 alt="Lolito"
                 className="w-full h-75 object-cover block "
               />
@@ -157,7 +157,7 @@ const Home = () => {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 4 (1).png"
+                src="/pictures/image 4 (1).png"
                 alt="Respira"
                 className="w-full h-75 object-cover block "
               />
@@ -184,7 +184,7 @@ const Home = () => {
           <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div className="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 1 (1).png"
+                src="/pictures/image 1 (1).png"
                 alt="Syltherine"
                 className="w-full h-75 object-cover block "
               />
@@ -213,7 +213,7 @@ const Home = () => {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 2 (1).png"
+                src="/pictures/image 2 (1).png"
                 alt="Leviosa"
                 className="w-full h-75 object-cover block "
               />
@@ -236,7 +236,7 @@ const Home = () => {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 3 (1).png"
+                src="/pictures/image 3 (1).png"
                 alt="Lolito"
                 className="w-full h-75 object-cover block "
               />
@@ -265,7 +265,7 @@ const Home = () => {
           <div class="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div class="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 4 (1).png"
+                src="/pictures/image 4 (1).png"
                 alt="Respira"
                 className="w-full h-75 object-cover block "
               />
@@ -315,7 +315,7 @@ const Home = () => {
         <div className="room-card w-82.5 h-105 relative shrink-0 overflow-hidden ">
           <img
             className="w-full h-full block object-cover"
-            src="/public/pictures/inspiration1.png"
+            src="/pictures/inspiration1.png"
             alt="Beautiful bedroom"
           />
 
@@ -334,7 +334,7 @@ const Home = () => {
         <div className="room-card second-room w-82.5 ml-3  h-105 relative shrink-0 overflow-hidden">
           <img
             className="w-full h-full block object-cover"
-            src="/public/pictures/inspriation 2.png"
+            src="/pictures/inspriation 2.png"
             alt="Beautiful dining room"
           />
         </div>

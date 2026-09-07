@@ -47,8 +47,4 @@ function About() {
 export default About;
 
 
-//  <RiCustomerService2Fill />  import { RiCustomerService2Fill } from "react-icons/ri";  coustumer ServiceWorker
-{/* <RiVerifiedBadgeLine /> import { RiVerifiedBadgeLine } from "react-icons/ri";   verified */}
-{/* <HiOutlineTrophy />  import { HiOutlineTrophy } from "react-icons/hi2";  tropy */}
-{/* <IoIosArrowForward /> import { IoIosArrowForward } from "react-icons/io";   arrow */}
-{/* <LiaShippingFastSolid />  import { LiaShippingFastSolid } from "react-icons/lia"; */}
+

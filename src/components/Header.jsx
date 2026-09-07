@@ -29,13 +29,13 @@ const Header = () => {
             Shop{" "}
           </Link>
           <Link
-            to="/Sofa"
+            to="/about"
             className="no-underline text-black text-[15px] font-medium hover:text-[#B88E2F]"
           >
-            Sofa
+            About
           </Link>
           <Link
-            to="/Contact"
+            to="/contact"
             className="no-underline text-black text-[15px] font-medium hover:text-[#B88E2F]"
           >
             Contact

@@ -22,10 +22,10 @@ function Footer() {
 
             <ul className="list-none">
                <Link to="/"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Home</a></li></Link>
-                <Link to="/Shop"><li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Shop</a></li></Link>
-                <Link to="/About"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">About</a></li></Link>
-                <Link to="/Contact"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Contact</a></li></Link>
-               <Link to="/Blog"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Blog</a></li> </Link>
+                <Link to="/shop"><li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Shop</a></li></Link>
+                <Link to="/about"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">About</a></li></Link>
+                <Link to="/contact"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Contact</a></li></Link>
+               <Link to="/blog"> <li className="mb-8.5"><a className="no-underline text-black text-base font-medium  hover:text-[#B88E2F]" href="#">Blog</a></li> </Link>
             </ul>
         </div>
 

@@ -8,14 +8,14 @@ function Checkout() {
         <Header/>
       <section className="banner w-full h-70 relative overflow-hidden">
         <img
-          src="/public/pictures/Rectangle 1.png"
+          src="/pictures/Rectangle 1.png"
           alt="Banner"
           className="banner-img w-full h-full object-cover"
         />
 
         <div className="banner-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <img
-            src="/public/pictures/Meubel House_Logos-05.png"
+            src="/pictures/Meubel House_Logos-05.png"
             alt="Logo"
             className="logo w-10 mb-2.5 ml-15"
           />
