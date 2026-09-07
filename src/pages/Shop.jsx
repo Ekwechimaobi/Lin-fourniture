@@ -84,7 +84,7 @@ const Shop = () => {
           <div className="product-card w-67.5 bg-[#f4f5f7] text-left">
             <div className="product-image relative overflow-hidden">
               <img
-                src="/public/pictures/image 1 (1).png"
+                src="/pictures/image 1 (1).png"
                 alt="Syltherine"
                 className="w-full h-75 object-cover block "
               />
